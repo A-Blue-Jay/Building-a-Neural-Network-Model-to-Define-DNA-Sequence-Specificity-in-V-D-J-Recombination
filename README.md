@@ -1,0 +1,2 @@
+# Building-a-Neural-Network-Model-to-Define-DNA-Sequence-Specificity-in-V-D-J-Recombination
+A sequence-based dense neural network; with one-hot encoded inputs to predict recombination efficiencies. Two models are trained on the H4S2 region and the other trained on the H4S2 and the partial nonamer region of the 12-RSS. Uses SHAP and pairwise cooperative relationships to identify and quantify the model's first and second order interactions.
