@@ -2,7 +2,7 @@
 A sequence-based dense neural network; with DNA sequence one-hot encoded inputs to predict recombination efficiencies. the models are optimized and trained on the H4S2 region and the other trained on the H4S2 and the partial nonamer region of the 12-RSS. Uses SHAP and pairwise cooperative relationships to identify and quantify the model's first and second order interactions.
 
 ## NOTE: These python scripts are formated for use in Jupyter Notebook
-### This repositoire was created in association with the [paper citation needed]
+### This repository was created in association with the [paper citation needed]
 
 # Contents:
 ## "DatasetFiles" - FOLDER
@@ -16,7 +16,7 @@ A folder of files of the recombination SARP-seq dataset files used in the paper 
 - "SARP_seq_H4-7S2_cNon_CF1_v2.txt"
 
 ## "SARP-seq-Dataset-Sequence-Logos" - JUPYTER NOTEBOOK
-A interactive notebook which uses logomaker to generate the representative sequence logo of the SARP-seq input library seqeunce diversity.
+An interactive notebook that uses logomaker to generate the representative sequence logo of the SARP-seq input library seqeunce diversity.
 Generates a sequence logo for:
 
 **Outline:**
@@ -27,7 +27,7 @@ Generates a sequence logo for:
   - LMO2 SARP-seq N(H4-H7)K(S2) input library
 
 ## "H4S2-Model-Hyperparameter-Search" - JUPYTER NOTEBOOK
-A interactive notebook which interatively trials hyperparameter values by performing stratified k-fold cross validation.
+An interactive notebook that iteratively trials hyperparameter values by performing stratified k-fold cross validation.
 
 **Outline:**
 - Setting Current Directory
@@ -49,7 +49,7 @@ A interactive notebook which interatively trials hyperparameter values by perfor
 
 
 ### "H4S2-Model-and-H4S2-cNon-Model-Training-and-SHAP-Analysis" - JUPYTER NOTEBOOK
-A interactive notebook which trains the final H4S2 model and H4S2-cNon model, then performs multiple SHAP analsysis to indentify and quantify first and second order interactions, and identify canadidate long distance second order interactions. 
+An interactive notebook that trains the final H4S2 model and H4S2-cNon model, then performs multiple SHAP analsysis to identify and quantify first and second order interactions, and identify candidate long distance second order interactions. 
 
 **Outline:**
 - Setting Current Directory
