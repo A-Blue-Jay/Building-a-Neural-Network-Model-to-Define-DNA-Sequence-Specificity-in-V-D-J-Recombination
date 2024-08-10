@@ -80,6 +80,60 @@ An interactive notebook that trains the final H4S2 model and H4S2-cNon model, th
   - Nonamer-wise Normalized H4S2-cNon SHAP values
   - KS-test - long-distant second order interactions
 
+# How to get started:
+
+Here we will use Anaconda Navigator's Jupyter Notebook application.
+
+### **NOTE: alternatively the interactive notebooks could be easily be adapted for use in Colab. if using Colab skip to step 3-Colab.**
+
+## 1) Access Jupyter Notebooks
+A method of accessing Jupyter Notebook's online computing environment, is needed. 
+Personally, I access Jupyter notebook application through the Anaconda Distribution.
+- Install Anaconda Navigator
+- Open Jupyter Notebook application in Anaconda Navigator user-interface
+
+## 2) Download "DatasetFiles" and Notebooks
+
+The recombination data Files are located in "DatasetFiles" folder, each containing the tested 12-RSS sequence and the sequence's measured read count. The notebooks will later require the file path into the folder.
+
+- Click-into and Download each Notebook in the repository to you local machine
+- Click-into and Download each file inside the "DatasetFiles" folder
+- Locate the downloaded dataset files
+- Copy the file path to clipboard
+
+## 3) Open and Configure Interactive Notebook Paths in Jupyter Notebook
+
+Launch the Jupyter Notebook application
+
+- Open Anaconda navigator - or other access Jupyter notebook
+- Launch Jupyter Notebook application
+- Select "Upload" and Locate the downloaded Jupyter notebook
+- Replace "C:\Users\File\Path\To\DatasetFiles\StorageFolder" with previously copied file path into the dataset files
+
+## 3-Colab) Open and Configure Interactive Notebook Paths in Colab
+
+- Select the Ribbon -> File -> Upload Notebook
+- Locate and Select Downloaded Notebook
+- Delete or Skip the "Setting Current Directory" section of the notebook
+- Open the file icon on the left the on the file explore panel
+- Upload the downloaded data files
+
+## 4) Install Uninstalled Packages with Pip 
+
+To import packages, the packages must be installed with a package manager, here pip will be used. To run bash commands in Jupyter Notebook, run a single line using the command prefix "!" 
+#### **EXAMPLE: "!pip install PackageName"**
+
+- Attempt to run the cell that contains all the package imports
+- Observe error for first uninstalled package "ModuleNotFoundError: No module named 'PackageName'"
+- Create a single line cell "!pip install PackageName" to install the necessary package
+- Repeat running the import cell and contniue to install each lacking package
+
+### **NOTE: incase of version dependency incompatibility, see "Package Import Version Requirments" for compatible versions to downgrade packages.**
+#### **EXAMPLE: "!pip install tensorflow==2.15.0"**
+- Run the notebook
+
+
+
 # Package Import Version Requirments:
 After package imports, a cell is included to check current package versions.
 
