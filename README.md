@@ -144,8 +144,8 @@ After package imports, a cell is included to check current package versions.
     - **itertools**
     - **math**
 ### "SARP-seq-Dataset-Sequence-Logos" - JUPYTER NOTEBOOK
-- **pandas** #Version: 1.24.3
-- **numpy** #Version: 1.5.3
+- **pandas** #Version: 1.5.3
+- **numpy** #Version: 1.24.3
 - **matplotlib.pyplot** #Version: 3.8.3
 - **logomaker** #Version: 0.8
 ### "H4S2-Model-Hyperparameter-Search" and "H4S2-Model-and-H4S2-cNon-Model-Training-and-SHAP-Analysis" - JUPYTER NOTEBOOK
