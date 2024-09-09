@@ -48,7 +48,7 @@ An interactive notebook that iteratively trials hyperparameter values by perform
   - Hidden Layer Bias use
 
 
-### "H4S2-Model-and-H4S2-cNon-Model-Training-and-SHAP-Analysis" - JUPYTER NOTEBOOK
+## "H4S2-Model-and-H4S2-cNon-Model-Training-and-SHAP-Analysis" - JUPYTER NOTEBOOK
 An interactive notebook that trains the final H4S2 model and H4S2-cNon model, then performs multiple SHAP analsysis to identify and quantify first and second order interactions, and identify candidate long distance second order interactions. 
 
 **Outline:**
@@ -80,6 +80,25 @@ An interactive notebook that trains the final H4S2 model and H4S2-cNon model, th
   - Nonamer-wise Normalized H4S2-cNon SHAP values
   - KS-test - long-distant second order interactions
 
+## "Trained H4S2 and H4S2_cNon Models" - FOLDER
+A folder containing both the trained NN models which where used in the accompony publication. The folder also contains an accomponying notebook which demonstrates loading and predicting with the models.
+
+**Trained Models:**
+- "H4S2_model.h5"
+- "H4S2_cNon_model.h5"
+
+**JUPYTER NOTEBOOK:**
+- "Load Trained H4S2 and H4S2_cNon Models.ipynb"
+  - **Outline:**
+     -  Setting Current Directory
+     - Importing Required Packages
+     - Load Models into Notebook
+     - Encoding Function
+     - Prediction Function
+     - H4S2 Model Prediction
+     - H4S2_cNon Model Prediction
+
+
 # How to get started:
 
 Here we will use Anaconda Navigator's Jupyter Notebook application.
@@ -105,7 +124,7 @@ The recombination data Files are located in "DatasetFiles" folder, each containi
 
 Launch the Jupyter Notebook application
 
-- Open Anaconda navigator - or other access Jupyter notebook
+- Open Anaconda navigator - or other Jupyter notebook access
 - Launch Jupyter Notebook application
 - Select "Upload" and Locate the downloaded Jupyter notebook
 - Replace "C:\Users\File\Path\To\DatasetFiles\StorageFolder" with previously copied file path into the dataset files
@@ -131,8 +150,7 @@ To import packages, the packages must be installed with a package manager, here 
 ### **NOTE: incase of version dependency incompatibility, see "Package Import Version Requirments" for compatible versions to downgrade packages.**
 #### **EXAMPLE: "!pip install tensorflow==2.15.0"**
 - Run the notebook
-
-
+  
 
 # Package Import Version Requirments:
 After package imports, a cell is included to check current package versions.
@@ -159,3 +177,8 @@ After package imports, a cell is included to check current package versions.
 - **scipy** #Version: 1.10.1
 - **seaborn** #Version: 0.12.2
 - **shap** #Version: 0.44.0
+### "Load Trained H4S2 and H4S2_cNon Models.ipynb" - JUPYTER NOTEBOOK
+- **pandas** #Version: 1.5.3
+- **numpy** #Version: 1.24.3
+- **tensorflow** #Version: 2.15.0
+- **tensorflow_addons** #Version: 0.22.0
