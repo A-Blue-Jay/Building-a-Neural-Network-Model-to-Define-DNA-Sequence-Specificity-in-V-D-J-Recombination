@@ -72,7 +72,7 @@ An interactive notebook that trains the final H4S2 model and H4S2-cNon model, th
   - Piechart of read count level for each dataset
 - Calculate RIC score for 12-RSS
   - Ensure PERL Installed and RIC algorithm is available
-  - Calculate the RIC score for each Dataset
+  - Calculate the RIC score for each Dataset using RIC algorithm PERL script
   - scatter plots of read count and RIC score for each dataset
 - Establishing Functions for stratified k-fold cross validation
   - Optimized k-fold model's 20-fold cross validation
