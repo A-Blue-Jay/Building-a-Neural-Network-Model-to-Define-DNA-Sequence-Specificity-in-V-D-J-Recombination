@@ -16,11 +16,11 @@ A folder of files of the recombination SARP-seq dataset files used in the paper 
 - "SARP_seq_H4-7S2_cNon_CF1_v2.txt"
 
 ## "RIC score algorithm PERL script" - FOLDER
-A folder containing the PERL script used to calculate the RIC score for the 12-RSS RIC score. for completeness the folder also includes the script and files for the 23-RSS ROC score.
+A folder containing the PERL script used to calculate the RIC score for the 12-RSS RIC score. for completeness the folder also includes the script and files for the 23-RSS RIC score.
 
 **Files:**
 - "12RSS_RIC_script.PERL"
-- "23RSS_ROC_script.PERL"
+- "23RSS_RIC_script.PERL"
 - "Human_12RSS_RSSsites.txt"
 - "Human_23RSS_RSSsites.txt"
 
