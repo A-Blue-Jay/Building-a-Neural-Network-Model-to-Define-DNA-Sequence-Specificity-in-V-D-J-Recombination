@@ -15,6 +15,15 @@ A folder of files of the recombination SARP-seq dataset files used in the paper 
 - "SARP_seq_H4-7S2_cNon_wholeRSS.txt"
 - "SARP_seq_H4-7S2_cNon_CF1_v2.txt"
 
+## "RIC score algorithm PERL script" - FOLDER
+A folder containing the PERL script used to calculate the RIC score for the 12-RSS RIC score. for completeness the folder also includes the script and files for the 23-RSS RIC score.
+
+**Files:**
+- "12RSS_RIC_script.PERL"
+- "23RSS_RIC_script.PERL"
+- "Human_12RSS_RSSsites.txt"
+- "Human_23RSS_RSSsites.txt"
+
 ## "SARP-seq-Dataset-Sequence-Logos" - JUPYTER NOTEBOOK
 An interactive notebook that uses logomaker to generate the representative sequence logo of the SARP-seq input library seqeunce diversity.
 Generates a sequence logo for:
@@ -61,13 +70,26 @@ An interactive notebook that trains the final H4S2 model and H4S2-cNon model, th
   - Adding zero scoring sequences to datasets
   - Pull H4S2, N1N3, N8N9 into new columns
   - Piechart of read count level for each dataset
+- Calculate RIC score for 12-RSS
+  - Ensure PERL Installed and RIC algorithm is available
+  - Calculate the RIC score for each Dataset using RIC algorithm PERL script
+  - scatter plots of read count and RIC score for each dataset
 - Establishing Functions for stratified k-fold cross validation
   - Optimized k-fold model's 20-fold cross validation
 - Train the H4S2 Model
 - Test the H4S2 Model with Experimental Replicates
+- Measure Model Error and Training Dataset's Standard Deviation
+  - Isolate Test and training experimental replicate datasets
+  - Calculate and visualize the predictive error and experimental error
+- H4S2 Model prediction vs RIC score
+- SNP mutation change in H4S2 Model prediction vs RIC score
+  - SNP effect heatmap for the H4S2 region
+  - separate SNP effect heatmap for each position of the H4S2 region
+- H4S2 Model prediction and melting temperature
 - H4S2 Model SHAP Analysis
   - Position-wise SHAP values - First Order Interaction
   - Pair-wise SHAP value cooperative relationship vectors - Second Order Interactions
+- SNP mutation change in H4S2 Model prediction for CRV grouping
 - Train the H4S2-cNon Model
   - Create H4S2-cNon DNA Sequence Encodings
   - Training H4S2_cNon
@@ -83,6 +105,7 @@ An interactive notebook that trains the final H4S2 model and H4S2-cNon model, th
 ## "Trained H4S2 and H4S2_cNon Models" - FOLDER
 A folder containing both the trained NN models which where used in the accompony publication. The folder also contains an accomponying notebook which demonstrates loading and predicting with the models.
 
+
 **Trained Models:**
 - "H4S2_model.h5"
 - "H4S2_cNon_model.h5"
@@ -90,7 +113,7 @@ A folder containing both the trained NN models which where used in the accompony
 **JUPYTER NOTEBOOK:**
 - "Load Trained H4S2 and H4S2_cNon Models.ipynb"
   - **Outline:**
-     -  Setting Current Directory
+     - Setting Current Directory
      - Importing Required Packages
      - Load Models into Notebook
      - Encoding Function
@@ -161,22 +184,29 @@ After package imports, a cell is included to check current package versions.
     - **importlib**
     - **itertools**
     - **math**
+    - **shutil**
+    - **subprocess**
 ### "SARP-seq-Dataset-Sequence-Logos" - JUPYTER NOTEBOOK
 - **pandas** #Version: 1.5.3
 - **numpy** #Version: 1.24.3
 - **matplotlib.pyplot** #Version: 3.8.3
 - **logomaker** #Version: 0.8
 ### "H4S2-Model-Hyperparameter-Search" and "H4S2-Model-and-H4S2-cNon-Model-Training-and-SHAP-Analysis" - JUPYTER NOTEBOOK
+- **biopython** #Version: 1.84
 - **pandas** #Version: 1.5.3
 - **numpy** #Version: 1.24.3
+- **logomaker** #Version: 0.8
 - **tensorflow** #Version: 2.15.0
 - **keras** #Version: 2.15.0
 - **tensorflow_addons** #Version: 0.22.0
 - **scikit-learn** #Version: 1.3.0
 - **matplotlib** #Version: 3.8.3
+- **pexpect** #Version: 4.9.0
 - **scipy** #Version: 1.10.1
 - **seaborn** #Version: 0.12.2
 - **shap** #Version: 0.44.0
+- **defaultdict from collections**
+- **reduce from functools**
 ### "Load Trained H4S2 and H4S2_cNon Models.ipynb" - JUPYTER NOTEBOOK
 - **pandas** #Version: 1.5.3
 - **numpy** #Version: 1.24.3
