@@ -184,6 +184,7 @@ After package imports, a cell is included to check current package versions.
     - **importlib**
     - **itertools**
     - **math**
+    - **re**
     - **shutil**
     - **subprocess**
 ### "SARP-seq-Dataset-Sequence-Logos" - JUPYTER NOTEBOOK
